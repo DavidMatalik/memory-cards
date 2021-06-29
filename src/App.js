@@ -1,5 +1,7 @@
+import Gameboard from './components/Gameboard'
+
 function App() {
-  return <div className='App'>This is the memory game</div>
+  return <Gameboard />
 }
 
 export default App

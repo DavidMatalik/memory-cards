@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Card = styled.div`
   order: ${(props) => props.order};
@@ -7,15 +7,24 @@ const Card = styled.div`
 
 const GameboardCard = (props) => {
   const [counter, setCounter] = useState(0)
-  const { order, onclickShuffle, title } = props
+  const { order, onclickShuffle, afterClickCheckCount, title, resetCard } =
+    props
+
+  useEffect(() => {
+    setCounter(0)
+  }, [resetCard])
+
+  useEffect(() => {
+    afterClickCheckCount(counter)
+  }, [counter])
 
   const onclickIncrementCounter = () => {
     setCounter(counter + 1)
   }
 
   const runClickFunctions = () => {
-    onclickShuffle()
     onclickIncrementCounter()
+    onclickShuffle()
   }
 
   return (

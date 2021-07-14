@@ -15,7 +15,9 @@ const GameboardCard = (props) => {
   }, [resetCard])
 
   useEffect(() => {
-    afterClickCheckCount(counter)
+    if (counter) {
+      afterClickCheckCount(counter)
+    }
   }, [counter])
 
   const onclickIncrementCounter = () => {

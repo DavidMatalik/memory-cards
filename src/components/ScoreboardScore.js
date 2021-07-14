@@ -10,6 +10,10 @@ const ScoreboardScore = (props) => {
     }
   }, [cardClick])
 
+  useEffect(() => {
+    setScore(0)
+  }, [resetCards])
+
   return <div>{score}</div>
 }
 

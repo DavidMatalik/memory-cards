@@ -11,8 +11,9 @@ import cat7 from '../images/cat7.jpg'
 import cat8 from '../images/cat8.jpg'
 
 const Main = styled.main`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 `
 
 const Gameboard = (props) => {

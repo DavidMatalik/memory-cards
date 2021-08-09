@@ -10,7 +10,6 @@ function App() {
     setCardClick(cardClick + 1)
     if (counter === 2) {
       setResetCards(!resetCards)
-      // reset Scoreboard (currentscore and bestscore)
     }
   }
 

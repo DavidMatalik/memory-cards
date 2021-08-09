@@ -13,7 +13,8 @@ import cat8 from '../images/cat8.jpg'
 const Main = styled.main`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  justify-items: center;
+  gap: 40px;
 `
 
 const Gameboard = (props) => {

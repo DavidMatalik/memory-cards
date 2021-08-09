@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react'
 
 const Card = styled.div`
   order: ${(props) => props.order};
+  width: 300px;
+  height: 300px;
 `
 
 const GameboardCard = (props) => {
   const [counter, setCounter] = useState(0)
-  const { order, onclickShuffle, afterClickCheckCount, title, resetCard } =
+  const { order, onclickShuffle, afterClickCheckCount, title, resetCard, img } =
     props
 
   useEffect(() => {
@@ -31,6 +33,7 @@ const GameboardCard = (props) => {
 
   return (
     <Card order={order} onClick={runClickFunctions}>
+      <img alt='cat' src={img} />
       {title}
     </Card>
   )

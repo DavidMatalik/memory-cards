@@ -1,6 +1,14 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import GameboardCard from './GameboardCard'
+import cat1 from '../images/cat1.jpg'
+import cat2 from '../images/cat2.jpg'
+import cat3 from '../images/cat3.jpg'
+import cat4 from '../images/cat4.jpg'
+import cat5 from '../images/cat5.jpg'
+import cat6 from '../images/cat6.jpg'
+import cat7 from '../images/cat7.jpg'
+import cat8 from '../images/cat8.jpg'
 
 const Main = styled.main`
   display: flex;
@@ -30,7 +38,7 @@ const Gameboard = (props) => {
     <Main>
       <GameboardCard
         title='card1'
-        img=''
+        img={cat1}
         order={randomOrder[0]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -38,7 +46,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card2'
-        img=''
+        img={cat2}
         order={randomOrder[1]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -46,7 +54,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card3'
-        img=''
+        img={cat3}
         order={randomOrder[2]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -54,7 +62,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card4'
-        img=''
+        img={cat4}
         order={randomOrder[3]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -62,7 +70,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card5'
-        img=''
+        img={cat5}
         order={randomOrder[4]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -70,7 +78,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card6'
-        img=''
+        img={cat6}
         order={randomOrder[5]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -78,7 +86,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card7'
-        img=''
+        img={cat7}
         order={randomOrder[6]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}
@@ -86,7 +94,7 @@ const Gameboard = (props) => {
       />
       <GameboardCard
         title='card8'
-        img=''
+        img={cat8}
         order={randomOrder[7]}
         onclickShuffle={shuffleCards}
         afterClickCheckCount={props.checkCount}

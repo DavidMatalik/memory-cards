@@ -39,7 +39,7 @@ const Gameboard = (props) => {
   return (
     <Main>
       <GameboardCard
-        title='card1'
+        title='Tired cat'
         img={cat1}
         order={randomOrder[0]}
         onclickShuffle={shuffleCards}
@@ -47,7 +47,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card2'
+        title='Yawning cat'
         img={cat2}
         order={randomOrder[1]}
         onclickShuffle={shuffleCards}
@@ -55,7 +55,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card3'
+        title='Concentrated cat'
         img={cat3}
         order={randomOrder[2]}
         onclickShuffle={shuffleCards}
@@ -63,7 +63,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card4'
+        title='Shocked cat'
         img={cat4}
         order={randomOrder[3]}
         onclickShuffle={shuffleCards}
@@ -71,7 +71,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card5'
+        title='Irritated cat'
         img={cat5}
         order={randomOrder[4]}
         onclickShuffle={shuffleCards}
@@ -79,7 +79,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card6'
+        title='Interested cat'
         img={cat6}
         order={randomOrder[5]}
         onclickShuffle={shuffleCards}
@@ -87,7 +87,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card7'
+        title='Playful cat'
         img={cat7}
         order={randomOrder[6]}
         onclickShuffle={shuffleCards}
@@ -95,7 +95,7 @@ const Gameboard = (props) => {
         resetCard={props.resetCards}
       />
       <GameboardCard
-        title='card8'
+        title='Bored cat'
         img={cat8}
         order={randomOrder[7]}
         onclickShuffle={shuffleCards}

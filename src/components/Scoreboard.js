@@ -1,4 +1,12 @@
 import { useState, useEffect } from 'react'
+import styled from 'styled-components'
+
+const Board = styled.div`
+  font-size: 200%;
+  text-align: right;
+  margin: 20px;
+  text-shadow: 2px 2px 3px;
+`
 
 const Scoreboard = (props) => {
   const { resetCards, cardClick } = props
@@ -19,10 +27,10 @@ const Scoreboard = (props) => {
   }, [resetCards])
 
   return (
-    <div>
+    <Board>
       <div>Score: {score} </div>
-      <div>Best score: {bestScore}</div>
-    </div>
+      <div>Highscore: {bestScore}</div>
+    </Board>
   )
 }
 

@@ -33,8 +33,8 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Gameboard checkCount={checkCount} resetCards={resetCards} />
       <Scoreboard resetCards={resetCards} cardClick={cardClick} />
+      <Gameboard checkCount={checkCount} resetCards={resetCards} />
     </div>
   )
 }

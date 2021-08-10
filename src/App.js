@@ -1,7 +1,7 @@
+import Header from './components/Header'
 import Gameboard from './components/Gameboard'
-import Scoreboard from './components/Scoreboard'
 import { useState } from 'react'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import font from './fonts/DelicateSansBold.ttf'
 
 const GlobalStyle = createGlobalStyle`
@@ -16,7 +16,14 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #FFAA4C;
+    padding: 20px;
   }
+`
+
+const Description = styled.p`
+  text-align: center;
+  font-size: 200%;
+  text-shadow: 2px 2px 6px;
 `
 
 function App() {
@@ -33,7 +40,11 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Scoreboard resetCards={resetCards} cardClick={cardClick} />
+      <Header resetCards={resetCards} cardClick={cardClick} />
+      <Description>
+        Remember on which cat you already clicked. And click on a new cat. If
+        you click on a cat you already clicked on, the game will restart.
+      </Description>
       <Gameboard checkCount={checkCount} resetCards={resetCards} />
     </div>
   )

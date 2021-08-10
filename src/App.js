@@ -1,6 +1,23 @@
 import Gameboard from './components/Gameboard'
 import Scoreboard from './components/Scoreboard'
 import { useState } from 'react'
+import { createGlobalStyle } from 'styled-components'
+import font from './fonts/DelicateSansBold.ttf'
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: DelicateSans;
+    src: url('${font}'); 
+  }
+
+  * {
+    font-family: DelicateSans;
+  }
+
+  body {
+    background: #FFAA4C;
+  }
+`
 
 function App() {
   const [resetCards, setResetCards] = useState(false)
@@ -15,6 +32,7 @@ function App() {
 
   return (
     <div>
+      <GlobalStyle />
       <Gameboard checkCount={checkCount} resetCards={resetCards} />
       <Scoreboard resetCards={resetCards} cardClick={cardClick} />
     </div>
